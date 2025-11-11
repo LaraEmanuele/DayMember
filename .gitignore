@@ -1,0 +1,60 @@
+# ------------------------------------
+# 1. DEPENDÊNCIAS E BUILD
+# ------------------------------------
+
+# Dependências do Node (Back-End)
+/backEnd/node_modules
+
+# Dependências do Front-End (Expo)
+/frontEnd/node_modules
+
+# Pastas de build/compilação do Backend (se usar TypeScript/Babel)
+/backEnd/dist
+/backEnd/build
+
+# ------------------------------------
+# 2. REGRAS DO FRONT-END (EXPO/REACT NATIVE)
+# ------------------------------------
+
+# Expo
+.expo/
+.expo/
+dist/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# generated native folders
+/frontEnd/ios
+/frontEnd/android
+
+# ------------------------------------
+# 3. REGRAS DE AMBIENTE E DEBUG
+# ------------------------------------
+
+# Arquivos sensíveis de ambiente (Crucial para o Backend e Frontend)
+.env*
+/backEnd/config/.env*
+/frontEnd/.env*.local
+
+# macOS (do seu arquivo original)
+.DS_Store
+*.pem
+
+# debug (do seu arquivo original)
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# typescript (do seu arquivo original)
+*.tsbuildinfo
